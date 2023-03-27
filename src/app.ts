@@ -33,8 +33,19 @@ function add(a: Combinable, b: Combinable) {
   return a + b;
 }
 
-const result = add(5, 3);
+const result = add("5", 3);
 result.split("");
+
+const fetchedUserData = {
+  id: "u1",
+  name: "Zid",
+  //   job: {
+  //     title: "CEO",
+  //     description: "My owne company",
+  //   },
+};
+
+console.log(fetchedUserData?.job.title);
 
 // type UnknownEmployee = Employee | Admin;
 
